@@ -1,0 +1,23 @@
+def césar(m,c)
+césar.position(350,105)
+césar.dimension(85,58)
+
+def opposé(x)
+opposé.position(600,208)
+opposé.dimension(98,39)
+
+def césar*(m,c)
+césar*.position(738,155)
+césar*.dimension(85,58)
+
+node(clef,(255,253))
+node(message_clair,(255,90))
+node(message_chiffré,(558,160))
+node(message_clair*,(917,210))
+césar<0---message_clair
+césar<1---clef
+césar>---message_chiffré
+opposé<0---clef
+opposé>---césar*<1
+césar*<0---message_chiffré
+césar*>---message_clair*
